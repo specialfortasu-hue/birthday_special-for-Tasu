@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Muse: A Gallery of You</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Bengali:wght@400;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #fcf9f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #8b5a2b;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7a6b5d;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 2x2 Grid Layouts */
+        .grid-2x2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border: 1px solid #e8dfd5;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(139, 90, 43, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(139, 90, 43, 0.1);
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 3px solid #f4efe9;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.03);
+        }
+
+        .quote-box {
+            margin-top: 25px;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-family: 'Noto Serif Bengali', serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #5c4d40;
+            margin: 0;
+        }
+
+        .citation-hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #e8dfd5;
+        }
+
+        .private-note {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background-color: #faf5ee;
+            border: 1px dashed #d4c4b7;
+            border-radius: 8px;
+            color: #6b5c4f;
+            font-size: 1rem;
+        }
+
+        .private-note a {
+            color: #8b5a2b;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #8b5a2b;
+            transition: color 0.3s ease;
+        }
+
+        .private-note a:hover {
+            color: #a67c52;
+        }
+
+        .private-message {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: 600;
+            color: #8b5a2b;
+        }
+
+        .footer-credit {
+            color: #8b5a2b;
+            font-size: 1.3rem;
+            font-family: 'Great Vibes', cursive;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2x2 {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            .image-wrapper {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>To My Muse</h1>
+        <p class="subtitle">Birthday Gift: A collection of moments where time stood still just for you.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- First 2x2 Grid -->
+        <div class="grid-2x2">
+            <!-- Photo 1 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-1.jpg" alt="City Sunshine">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"শহরের এই ব্যস্ততার মাঝেও তোমার স্নিগ্ধতা যেন এক টুকরো মিষ্টি রোদ্দুর। হলুদে তোমায় অপরূপা লাগে, আর ওই আনমনা চাহনি বারবার আমার হৃদয় কেড়ে নেয়।" <span class="citation-hidden">[cite: 8]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-2.jpg" alt="Evening Elegance">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"রাতের স্নিগ্ধ আলোয় লাল শাড়িতে তুমি যেন এক মায়াবী অপ্সরী। তোমার ওই আনমনা দৃষ্টিতে লুকিয়ে থাকা হাজারো না-বলা কথা আমাকে নিমেষেই মুগ্ধ করে।" <span class="citation-hidden">[cite: 7]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-3.jpg" alt="Ocean Breeze">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"বিশাল সমুদ্রের নীল ঢেউয়ের চেয়েও গভীর তোমার ওই হাসি। সাগরের মাতাল হাওয়ায় তোমার উড়ন্ত আঁচল যেন আমার স্বপ্নের আকাশ ছুঁয়ে যায়।" <span class="citation-hidden">[cite: 6]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-4.jpg" alt="Ancient Grace">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"প্রাচীন ইটের গাঁথুনিতে লুকিয়ে থাকা ইতিহাসের মাঝেও তোমার সৌন্দর্য এক চিরন্তন কাব্য। তোমার এই উচ্ছলতা আমার পুরো পৃথিবীতে প্রাণ এনে দেয়।" <span class="citation-hidden">[cite: 5]</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second 2x2 Grid -->
+        <div class="grid-2x2">
+            <!-- Photo 5 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-5.jpg" alt="Nature's Joy">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"প্রকৃতির সবুজ ক্যানভাসে তুমিই যেন ফুটে থাকা সবচেয়ে সুন্দর ফুলটি। চোখ বন্ধ করে তোমার এই প্রাণোচ্ছল হাসি আমার জীবনের সবচেয়ে বড় প্রশান্তি।" <span class="citation-hidden">[cite: 4]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-6.jpg" alt="Classic Beauty">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"পুরনো স্থাপত্যের খিলানে হেলান দেওয়া তোমার এই স্নিগ্ধ রূপ আমাকে পুরনো দিনের প্রেমের গল্প মনে করিয়ে দেয়। তোমার মিষ্টি হাসি নিমিষেই সব ক্লান্তি ভুলিয়ে দেয়।" <span class="citation-hidden">[cite: 3]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-7.jpg" alt="Balcony Royalty">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"রাজকীয় বারান্দায় দাঁড়িয়ে থাকা তুমি যেন আমার হৃদয়ের একমাত্র রাজকন্যা। তোমার আভিজাত্য আর স্নিগ্ধ মায়ায় আমি চিরকাল বন্দী থাকতে চাই।" <span class="citation-hidden">[cite: 2]</span></p>
+                </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="p-8.jpg" alt="A Healer's Grace">
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"সাদা অ্যাপ্রোনে জড়ানো তুমি শুধু আমার ভালোবাসাই নও, তুমি আমার অহংকার। তোমার সেবাময়ী মন আর মায়াবী হাসি মিলেমিশে তৈরি করেছে আমার জীবনের সবচেয়ে নিখুঁত মানুষটিকে।" <span class="citation-hidden">[cite: 1]</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="private-note">
+            <p><strong>Note:</strong> If you have any suggestions or thoughts, please contact me at <a href="mailto:specialfortasu@gmail.com">specialfortasu@gmail.com</a>.</p>
+            <span class="private-message">It is a private site, nobody is here without you.</span>
+        </div>
+        <p class="footer-credit">Crafted with endless love, for the one who holds my heart forever.</p>
+    </footer>
+
+</body>
+</html>
