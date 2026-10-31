@@ -33,10 +33,10 @@
         }
 
         .subtitle {
+            font-family: 'Noto Serif Bengali', serif;
             font-size: 1.2rem;
             color: #7a6b5d;
             margin-top: 10px;
-            font-style: italic;
         }
 
         .container {
@@ -101,10 +101,49 @@
             line-height: 1.8;
             color: #5c4d40;
             margin: 0;
+            font-style: italic;
+        }
+        
+        /* Video Section Styles */
+        .video-section {
+            text-align: center;
+            margin: 20px auto 60px;
+            padding: 35px;
+            background: #ffffff;
+            border: 1px solid #e8dfd5;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(139, 90, 43, 0.05);
+            max-width: 900px;
         }
 
-        .citation-hidden {
-            display: none;
+        .video-wrapper {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 3px solid #f4efe9;
+            margin-bottom: 25px;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .video-quote {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #8b5a2b;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .video-subquote {
+            font-family: 'Noto Serif Bengali', serif;
+            font-size: 1.3rem;
+            color: #7a6b5d;
+            margin-top: 10px;
+            font-style: italic;
         }
 
         footer {
@@ -163,6 +202,9 @@
             .image-wrapper {
                 height: 350px;
             }
+            .video-quote {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -170,7 +212,7 @@
 
     <header>
         <h1>To My Muse</h1>
-        <p class="subtitle">Birthday Gift: A collection of moments where time stood still just for you.</p>
+        <p class="subtitle">শুভ জন্মদিন: তোমার জন্য থমকে থাকা কিছু সুন্দর মুহূর্তের ছোট্ট একটি সংগ্রহ।</p>
     </header>
 
     <div class="container">
@@ -183,7 +225,7 @@
                     <img src="p-1.jpg" alt="City Sunshine">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"শহরের এই ব্যস্ততার মাঝেও তোমার স্নিগ্ধতা যেন এক টুকরো মিষ্টি রোদ্দুর। হলুদে তোমায় অপরূপা লাগে, আর ওই আনমনা চাহনি বারবার আমার হৃদয় কেড়ে নেয়।" <span class="citation-hidden">[cite: 8]</span></p>
+                    <p class="quote-text">"তোমার প্রাণবন্ত শক্তি চারপাশের পৃথিবীতে এক অদ্ভুত উষ্ণতা ছড়ায়। শহরের এই ব্যস্ততার মাঝেও তোমার স্নিগ্ধতা খুব সহজেই নজর কাড়ে।"</p>
                 </div>
             </div>
 
@@ -193,7 +235,7 @@
                     <img src="p-2.jpg" alt="Evening Elegance">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"রাতের স্নিগ্ধ আলোয় লাল শাড়িতে তুমি যেন এক মায়াবী অপ্সরী। তোমার ওই আনমনা দৃষ্টিতে লুকিয়ে থাকা হাজারো না-বলা কথা আমাকে নিমেষেই মুগ্ধ করে।" <span class="citation-hidden">[cite: 7]</span></p>
+                    <p class="quote-text">"তোমার প্রতিটি পদক্ষেপে মিশে আছে এক শান্ত ও সহজাত আভিজাত্য। তুমি সব পরিবেশেই নিজেকে দারুণভাবে মানিয়ে নাও।"</p>
                 </div>
             </div>
 
@@ -203,7 +245,7 @@
                     <img src="p-3.jpg" alt="Ocean Breeze">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"বিশাল সমুদ্রের নীল ঢেউয়ের চেয়েও গভীর তোমার ওই হাসি। সাগরের মাতাল হাওয়ায় তোমার উড়ন্ত আঁচল যেন আমার স্বপ্নের আকাশ ছুঁয়ে যায়।" <span class="citation-hidden">[cite: 6]</span></p>
+                    <p class="quote-text">"তুমি যেন এক মুক্ত প্রাণের সুন্দর প্রতিচ্ছবি। তোমার হাসিতে মিশে আছে সমুদ্রের স্নিগ্ধ বাতাসের মতো এক প্রশান্তিকর অনুভূতি।"</p>
                 </div>
             </div>
 
@@ -213,7 +255,7 @@
                     <img src="p-4.jpg" alt="Ancient Grace">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"প্রাচীন ইটের গাঁথুনিতে লুকিয়ে থাকা ইতিহাসের মাঝেও তোমার সৌন্দর্য এক চিরন্তন কাব্য। তোমার এই উচ্ছলতা আমার পুরো পৃথিবীতে প্রাণ এনে দেয়।" <span class="citation-hidden">[cite: 5]</span></p>
+                    <p class="quote-text">"তোমার মুগ্ধতা সত্যিই চিরন্তন। যেকোনো পরিবেশকে আনন্দে ভরিয়ে তোলার এক অদ্ভুত সুন্দর ক্ষমতা রয়েছে তোমার মাঝে।"</p>
                 </div>
             </div>
         </div>
@@ -226,7 +268,7 @@
                     <img src="p-5.jpg" alt="Nature's Joy">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"প্রকৃতির সবুজ ক্যানভাসে তুমিই যেন ফুটে থাকা সবচেয়ে সুন্দর ফুলটি। চোখ বন্ধ করে তোমার এই প্রাণোচ্ছল হাসি আমার জীবনের সবচেয়ে বড় প্রশান্তি।" <span class="citation-hidden">[cite: 4]</span></p>
+                    <p class="quote-text">"তোমাকে খুশি ও প্রশান্ত দেখতে পাওয়াটা সত্যিই সুন্দর। তোমার এই আনন্দ সবার মাঝে ছড়িয়ে পড়ে চারপাশ আলোকিত করে তোলে।"</p>
                 </div>
             </div>
 
@@ -236,7 +278,7 @@
                     <img src="p-6.jpg" alt="Classic Beauty">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"পুরনো স্থাপত্যের খিলানে হেলান দেওয়া তোমার এই স্নিগ্ধ রূপ আমাকে পুরনো দিনের প্রেমের গল্প মনে করিয়ে দেয়। তোমার মিষ্টি হাসি নিমিষেই সব ক্লান্তি ভুলিয়ে দেয়।" <span class="citation-hidden">[cite: 3]</span></p>
+                    <p class="quote-text">"তোমার এই সহজাত স্নিগ্ধতা কখনোই দৃষ্টি এড়ায় না। তোমার মিষ্টি ও প্রশান্তিকর হাসি প্রতিটি মুহূর্তকেই আরও কিছুটা বিশেষ করে তোলে।"</p>
                 </div>
             </div>
 
@@ -246,7 +288,7 @@
                     <img src="p-7.jpg" alt="Balcony Royalty">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"রাজকীয় বারান্দায় দাঁড়িয়ে থাকা তুমি যেন আমার হৃদয়ের একমাত্র রাজকন্যা। তোমার আভিজাত্য আর স্নিগ্ধ মায়ায় আমি চিরকাল বন্দী থাকতে চাই।" <span class="citation-hidden">[cite: 2]</span></p>
+                    <p class="quote-text">"তোমার মাঝে রয়েছে এক শান্ত অথচ দৃঢ় ব্যক্তিত্ব। তোমার প্রতিটি কাজে আত্মবিশ্বাস ও আভিজাত্য দেখাটা সত্যিই অনুপ্রেরণাদায়ক।"</p>
                 </div>
             </div>
 
@@ -256,9 +298,22 @@
                     <img src="p-8.jpg" alt="A Healer's Grace">
                 </div>
                 <div class="quote-box">
-                    <p class="quote-text">"সাদা অ্যাপ্রোনে জড়ানো তুমি শুধু আমার ভালোবাসাই নও, তুমি আমার অহংকার। তোমার সেবাময়ী মন আর মায়াবী হাসি মিলেমিশে তৈরি করেছে আমার জীবনের সবচেয়ে নিখুঁত মানুষটিকে।" <span class="citation-hidden">[cite: 1]</span></p>
+                    <p class="quote-text">"তোমার এই স্নিগ্ধতার আড়ালে লুকিয়ে আছে মানুষের সেবা করার এক বিশাল হৃদয়। পেশার প্রতি তোমার এই একাগ্রতা আমার কাছে সবসময়ই প্রশংসনীয়।"</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Special Video Section -->
+        <div class="video-section">
+            <div class="video-wrapper">
+                <!-- Ensure your video file is named 'video.mp4' and placed in the same folder -->
+                <video controls autoplay loop muted playsinline>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="video-quote">To be soulmate for the whole life...</p>
+            <p class="video-subquote">"সারাজীবনের জন্য আত্মার সঙ্গী হয়ে থাকতে চাই..."</p>
         </div>
 
     </div>
@@ -266,7 +321,7 @@
     <footer>
         <div class="private-note">
             <p><strong>Note:</strong> If you have any suggestions or thoughts, please contact me at <a href="mailto:specialfortasu@gmail.com">specialfortasu@gmail.com</a>.</p>
-            <span class="private-message">It is a private site, nobody is here without you.</span>
+            <span class="private-message">It is a private site, nobody is here without you. HAPPY BIRTHDAY!!</span>
         </div>
         <p class="footer-credit">Crafted with endless love, for the one who holds my heart forever.</p>
     </footer>
